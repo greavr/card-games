@@ -1,0 +1,359 @@
+{
+    "default_values" : {
+        "one": {
+            "converstation_points" : 1
+        },
+        "two" : {
+            "partial_conversation" : 1
+        }
+    },
+    "conversations" : [
+        {
+            "name" : "All units get in there, NOW!",
+            "quote" : "If we don't move now he is going to kill every last one of the hostages! Get all available units in there NOW!",
+            "cost": 8,
+            "two": {
+                "free_hostages" : 4,
+                "abductor" : "eliminated",
+                "continue" : false
+            },
+            "one" : {
+                "free_hostages" : 3,
+                "threat_level" : 3,
+                "continue" : false
+            },
+            "zero" : {
+                "abductor" : "escaped"
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Small Talk...",
+            "quote" : "So tell me... do you have family?\nI've got a wife and three kids myself, all boys. They're everything to me.",
+            "cost": 0,
+            "two": {
+                "converstation_points" : 3
+            },
+            "one" : {
+                "converstation_points" : 2
+            },
+            "zero" : {
+                "converstation_points" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Small Talk...",
+            "quote" : "So tell me... do you have family?\nI've got a wife and three kids myself, all boys. They're everything to me.",
+            "cost": 0,
+            "two": {
+                "converstation_points" : 3
+            },
+            "one" : {
+                "converstation_points" : 2
+            },
+            "zero" : {
+                "converstation_points" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Keep cool",
+            "quote" : "Let's keep our heads now. Neither one of us will get what we want if we lose our cool.",
+            "cost": 0,
+            "two": {
+                "converstation_points" : 1,
+                "threat_level" : -1
+            },
+            "one" : {
+                "threat_level" : -1
+            },
+            "zero" : {
+                "converstation_points" : -1
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "What are your demands?",
+            "quote" : "Well here we are... You hold all the cards. Tell me what you want.",
+            "cost": 0,
+            "two": {
+                "converstation_points" : 2,
+                "Demand" : 1
+            },
+            "one" : {
+                "converstation_points" : 1,
+                "Demand" : 1
+            },
+            "zero" : {
+                "threat_level" : 1
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "What are your demands?",
+            "quote" : "Well here we are... You hold all the cards. Tell me what you want.",
+            "cost": 0,
+            "two": {
+                "converstation_points" : 2,
+                "Demand" : 1
+            },
+            "one" : {
+                "converstation_points" : 1,
+                "Demand" : 1
+            },
+            "zero" : {
+                "threat_level" : 1
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Just a few more minutes!",
+            "quote" : "Wait, wait, wait, don't hang up! Just talk to me! How can I help you if you won't talk to me?",
+            "cost": 2,
+            "two": {
+                "converstation_points" : 4
+            },
+            "one" : {
+                "converstation_points" : 3,
+                "threat_level" : 1
+            },
+            "zero" : {
+                "threat_level" : 2,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Just a few more minutes!",
+            "quote" : "Wait, wait, wait, don't hang up! Just talk to me! How can I help you if you won't talk to me?",
+            "cost": 2,
+            "two": {
+                "converstation_points" : 4
+            },
+            "one" : {
+                "converstation_points" : 3,
+                "threat_level" : 1
+            },
+            "zero" : {
+                "threat_level" : 2,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "You need to trust me",
+            "quote" : "No one else here wants to help you. They want to get in there and take you down, hostages be damned. Right now, I'm the best friend you've got.",
+            "cost": 0,
+            "two": {
+                "till_conversation_end" : "Partial"
+            },
+            "one" : {
+                "till_next_threat" : "Partial" 
+            },
+            "zero" : {
+                "threat_level" : 1,
+                "converstation_points" : 1
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "You need to trust me",
+            "quote" : "No one else here wants to help you. They want to get in there and take you down, hostages be damned. Right now, I'm the best friend you've got.",
+            "cost": 0,
+            "two": {
+                "till_conversation_end" : "Partial"
+            },
+            "one" : {
+                "till_next_threat" : "Partial" 
+            },
+            "zero" : {
+                "threat_level" : 1,
+                "converstation_points" : 1
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Just stay calm...",
+            "quote" : "I know you're angry, but just stay clam and don't do anything rash. If you kill any of the hostages all bets are off. So, just stay calm.",
+            "cost": 2,
+            "two": {
+                "threat_level" : -2
+            },
+            "one" : {
+                "threat_level" : -1
+            },
+            "zero" : {
+                "threat_level" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Just stay calm...",
+            "quote" : "I know you're angry, but just stay clam and don't do anything rash. If you kill any of the hostages all bets are off. So, just stay calm.",
+            "cost": 2,
+            "two": {
+                "threat_level" : -2
+            },
+            "one" : {
+                "threat_level" : -1
+            },
+            "zero" : {
+                "threat_level" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Minor Extraction",
+            "quote" : "I don't know who was in there, but it wasn't us. We've done nothing aggressive. Do you have anyone on your team you don't really trust?",
+            "cost": 3,
+            "two": {
+                "free_hostages" : 2
+            },
+            "one" : {
+                "free_hostages" : 1,
+                "threat_level" : 1
+            },
+            "zero" : {
+                "kill_hostages" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "Minor Extraction",
+            "quote" : "I don't know who was in there, but it wasn't us. We've done nothing aggressive. Do you have anyone on your team you don't really trust?",
+            "cost": 3,
+            "two": {
+                "free_hostages" : 2
+            },
+            "one" : {
+                "free_hostages" : 1,
+                "threat_level" : 1
+            },
+            "zero" : {
+                "kill_hostages" : 1,
+                "continue" : false
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "A bold lie...",
+            "quote" : "OK, it's a done deal. We're going to give you everything you're asking for. Now there's something I need from you...",
+            "cost": 4,
+            "two": {
+                "threat_level" : -3,
+                "converstation_points" : 1
+            },
+            "one" : {
+                "threat_level" : -1,
+                "converstation_points" : 1
+            },
+            "zero" : {
+                "threat_level" : 3
+            },
+            "other" : {} 
+        },
+        {
+            "name" : "An empty promise...",
+            "quote" : "Listen... I am going to do everything I can to meet your demands. It will just take some time, so you have to make sure the hostages are kept alive",
+            "cost": 4,
+            "two": {
+                "threat_num_dice" : 2,
+                "converstation_points" : 2
+            },
+            "one" : {
+                "threat_num_dice" : 2
+            },
+            "zero" : {
+                "threat_num_dice" : -1,
+                "kill_hostages" : 1
+            } ,
+            "other" : {}
+        },
+        {
+            "name" : "I'm coming in to talk",
+            "quote" : "You need to look in my eyes to know what I'm telling you is true. Can I come in? Just me, unarmed, so we can talk face to face.",
+            "cost": 5,
+            "two": {
+                "conversation_num_dice" : 2
+            },
+            "one" : {
+                "conversation_num_dice" : 1
+            },
+            "zero" : {
+                "remove_card" : true
+            } ,
+            "other" : {}
+        },
+        {
+            "name" : "Major Extraction",
+            "quote" : "How many hostages? You might want to count them again because covert agents just got some more of there. It's time to start thinkg about surrendering.",
+            "cost": 6,
+            "two": {
+                "free_hostages" : 3,
+                "kill_hostages" : 2,
+                "continue" : false
+            },
+            "one" : {
+                "free_hostages" : 2,
+                "kill_hostages" : 2,
+                "continue" : false
+            },
+            "zero" : {
+                "threat_level" : 2,
+                "kill_hostages" : 2,
+                "continue" : false
+            },
+            "other" : {}
+        },
+        {
+            "name" : "Sniper, take the shot!",
+            "quote" : "Have you looked out the window and seen what you're up against? We aren't going anywhere!",
+            "cost": 7,
+            "two": {
+                "free_hostages" : 2,
+                "abductor" : "eliminated",
+                "continue" : false
+            },
+            "one" : {
+                "abductor" : "eliminated",
+                "continue" : false
+            },
+            "zero" : {
+                "threat_level" : 2,
+                "kill_hostages" : 2,
+                "continue" : false
+            },
+            "other" : {}
+        },
+        {
+            "name" : "What I meant was...",
+            "quote" : "No I didn't mean that.. What I meant to say was I completely understand where you're coming from. So tell me how I can help you.",
+            "cost": 1,
+            "one":{},
+            "two": {},
+            "zero" : {},
+            "other" : {
+                "threat_reroll" : true,
+                "terror_reroll" : true
+            }
+        },
+        {
+            "name" : "What I meant was...",
+            "quote" : "No I didn't mean that.. What I meant to say was I completely understand where you're coming from. So tell me how I can help you.",
+            "cost": 1,
+            "one":{},
+            "two": {},
+            "zero" : {},
+            "other" : {
+                "threat_reroll" : true,
+                "terror_reroll" : true
+            }
+        }
+    ]
+}
